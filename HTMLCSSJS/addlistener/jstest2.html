@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+
+        <style>
+            #name{
+                color: red
+            }
+            .centered{
+                text-align: center;
+            }
+        </style>
+
+        <title>
+            JsTest2
+        </title>
+    </head>
+
+    <body class="centered">
+        <header class="large">
+            This is a javascript based on jstest1, I trigger function after submit in a nested way
+        </header>
+
+        <form>
+            <input autocomplete="off", autofocus id="name" name = "name" placeholder="Type your Name" type="text" >
+            <input type="submit" >
+        </form>
+
+        <script>
+
+            let form = document.querySelector('form');
+            form.addEventListener('submit', function (event){
+                let name = document.querySelector('#name').value;
+                alert('this alert is created by greet function. Hello! ' + name 
+                +"\nlet form = document.querySelector('form');\n"
+                    +'form.addEventListener("submit", greet)' 
+                );
+                event.preventDefault();
+            });
+
+        </script>
+        <div class = medium>
+            always remember add 'event.preventDefault();' at the end of JS function to prevent reloading the page and clear the input<br>
+            and there is no () in form.addEventListener("submit", greet).<br>
+            also, in"div", \n does not work, but use a "br instaed
+        </div>
+            
+    </body>
+</html>    

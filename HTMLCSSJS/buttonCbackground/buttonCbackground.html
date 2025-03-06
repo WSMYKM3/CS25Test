@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+            .centered{
+            text-align: center;
+            }
+        </style>
+        
+        <title>
+            buttonCbackground
+        </title>
+    </head>
+    
+    <body class="centered">
+        <button id="redcolor">R</button> 
+        <button id="greencolor">G</button> 
+        <button id="bluecolor">B</button> 
+
+        <script>
+            let pagecolor = document.querySelector('body');
+            document.querySelector('#redcolor').addEventListener('click', function(){
+                pagecolor.style.backgroundColor = '#550000';
+            });
+            document.querySelector('#greencolor').addEventListener('click', function(){
+                pagecolor.style.backgroundColor = '#007500';
+            });
+            document.querySelector('#bluecolor').addEventListener('click', function(){
+                pagecolor.style.backgroundColor = '#000055';
+            });
+        </script>
+    
+    </body>
+</html>    

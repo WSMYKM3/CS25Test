@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+            function greet(){
+                let name = document.querySelector('#name').value;
+                alert('this alert is created by greet function. Hello! ' + name);
+            }
+
+        </script>
+
+        <style>
+            #name{
+                color: red
+            }
+        </style>
+        <title>
+            JsTest1
+        </title>
+    </head>
+
+    <body class="centered">
+        <header class="large">
+            This is a javascript test page, with a function called greeted()
+        </header>
+
+        <form onsubmit="greet(); return false">
+            <input autocomplete="off", autofocus id="name" name = "name" placeholder="Type your Name" type="text" >
+            <input type="submit" >
+        </form>
+            
+    </body>
+</html>    

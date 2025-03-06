@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+
+        <style>
+            #name{
+                color: red
+            }
+        </style>
+
+    <script src = "listener.js"></script>
+
+        <title>
+            listenerinJS
+        </title>
+    </head>
+
+    <body class="centered">
+        <header class="large">
+           I add listener function all in a seperate file called "listener.js"
+        </header>
+
+        <form>
+            <input autocomplete="off", autofocus id="name" name = "name" placeholder="Type your Name" type="text" >
+            <input type="submit" >
+        </form>
+
+       
+        <div class = medium>
+            always remember add 'event.preventDefault();' at the end of JS function to prevent reloading the page and clear the input<br>
+            and there is no () in form.addEventListener("submit", greet).<br>
+            also, in"div", \n does not work, but use a "br instaed<br>
+            the JS script "addlistenerinhead" is added in head, so document.addEventListener('DOMContentLoaded', function() )is needed
+        </div>
+            
+    </body>
+</html>    

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+
+        <style>
+            #name{
+                color: red
+            }
+
+            #notification{
+                color: green
+            }
+
+            .medium{
+            font-size: medium;
+            }
+
+            .centered{
+                text-align: center;
+            }
+        
+        </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let input = document.querySelector('input');
+            input.addEventListener('keyup', function (event){
+                let name = document.querySelector('p');
+                if(input.value){
+                    name.innerHTML = `hello, ${input.value}`
+                }
+                else{
+                    name.innerHTML = 'hello, please tell me who are you'
+                }   
+            });
+        })
+    </script>
+
+        <title>
+            DynamicTyping
+        </title>
+    </head>
+
+    <body class="centered">
+        <header class="large">
+           This is a script for dynamically update input word to the page
+        </header>
+
+        <form>
+            <input autocomplete="off", autofocus placeholder="Type your Name" type="text" >
+        </form>
+        <p></p>
+
+       
+        <div class = "medium">
+            a f-string-like code is added: name.innerHTML = `hello, ${input.value}`<br>
+            "&lt;p&gt;&lt;/p&gt;" should be added after the form to show dynamic words input.<br>
+            <a id="notification" >but remember that the symbol here is ``, which is above tab key</a>
+        </div>
+            
+    </body>
+</html>    
