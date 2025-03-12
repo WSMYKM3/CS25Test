@@ -1,0 +1,64 @@
+1. TypeError
+当操作或函数应用于不适当的数据类型时发生。
+python
+复制
+编辑
+len(5)  # TypeError: object of type 'int' has no len()
+2. IndexError
+当尝试访问列表或元组等序列中不存在的索引时发生。
+python
+复制
+编辑
+lst = [1, 2, 3]
+print(lst[5])  # IndexError: list index out of range
+3. KeyError
+当尝试访问字典中不存在的键时发生。
+python
+复制
+编辑
+d = {"a": 1}
+print(d["b"])  # KeyError: 'b'
+4. AttributeError
+当对象没有所调用的属性或方法时发生。
+python
+复制
+编辑
+x = 10
+x.append(5)  # AttributeError: 'int' object has no attribute 'append'
+5. NameError
+当访问未定义的变量时发生。
+python
+复制
+编辑
+print(a)  # NameError: name 'a' is not defined
+6. SyntaxError
+代码语法错误时发生（通常在解析阶段）。
+python
+复制
+编辑
+eval("1 +")  # SyntaxError: unexpected EOF while parsing
+7. IndentationError
+代码缩进错误时发生。
+python
+复制
+编辑
+def func():
+print("Hello")  # IndentationError: expected an indented block
+8. ZeroDivisionError
+当除数为零时发生。
+python
+复制
+编辑
+print(10 / 0)  # ZeroDivisionError: division by zero
+9. FileNotFoundError
+试图打开不存在的文件时发生。
+python
+复制
+编辑
+open("non_existent_file.txt")  # FileNotFoundError: [Errno 2] No such file or directory
+10. ImportError
+导入模块失败时发生。
+python
+复制
+编辑
+import non_existent_module  # ImportError: No module named 'non_existent_module'
