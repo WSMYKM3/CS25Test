@@ -1,4 +1,4 @@
 # CS25Test
  a test repository for CS2025  
- For C/C++ learning  
- HTML, CSS, Javascript  
+ Please be honest to your test, this is just my testing repo for the course!  
+ 
