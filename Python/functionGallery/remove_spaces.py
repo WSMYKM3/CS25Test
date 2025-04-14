@@ -1,7 +1,7 @@
 import sys
 import re
 
-def remove_newline_after_comma(input_file="fenqi.txt", output_file="output.txt"):
+def remove_newline_after_comma(input_file="Fangda.txt", output_file="outputfangda.txt"):
     try:
         with open(input_file, 'r', encoding='utf-8') as file:
             content = file.read()
